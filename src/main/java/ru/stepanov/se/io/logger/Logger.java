@@ -31,7 +31,7 @@ public class Logger {
     public final void addLogsToFile(final String log) {
         lines.add(log);
         try {
-            Files.write(Paths.get(file), lines);
+            Files.write(path, lines);
         } catch (IOException fileProcessingException) {
             System.out.println("ERROR: write to file");
             fileProcessingException.printStackTrace();
@@ -41,6 +41,6 @@ public class Logger {
     public static void main(String[] args) {
         Logger logger = new Logger();
         logger.getLogs();
-        logger.addLogsToFile("Гэри Тэйн");
+        logger.addLogsToFile("Крис Белл");
     }
 }
