@@ -15,7 +15,6 @@
         <lombok.version>1.18.2</lombok.version>
         <apache.maven.version>3.1</apache.maven.version>
     </properties>
-
     <build>
         <plugins>
             <plugin>
@@ -30,7 +29,6 @@
             </plugin>
         </plugins>
     </build>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
