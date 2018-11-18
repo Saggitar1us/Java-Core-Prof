@@ -1,7 +1,6 @@
 package ru.stepanov.se.jdbc.dao;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import ru.stepanov.se.mybatis.entity.Task;
 import ru.stepanov.se.mybatis.service.TaskService;
 
@@ -19,7 +18,6 @@ public class TaskTest {
         task.setName("WOW name");
         taskDAO.insert(task);
 
-        final List<Task> tasks = taskDAO.findAll();
-        Assert.assertNotNull(tasks);
+        final List<Task> tasks = taskDAO.findAll();;
     }
 }

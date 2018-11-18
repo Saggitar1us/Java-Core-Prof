@@ -1,7 +1,7 @@
 package ru.stepanov.se.jdbc.dao;
 
+import org.junit.jupiter.api.Test;
 import ru.stepanov.se.jdbc.dao.config.Config;
-import org.junit.Test;
 
 public class ConnectionUrlTest {
 

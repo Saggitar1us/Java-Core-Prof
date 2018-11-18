@@ -1,17 +1,16 @@
 package ru.stepanov.se.jdbc;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import ru.stepanov.se.jdbc.dao.ProjectDAO;
 import ru.stepanov.se.jdbc.dto.ProjectDTO;
 
-import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 public class ProjectTest {
 
     @Test
-    public void test() throws Exception {
+    void test() throws Exception {
         final ProjectDAO projectDAO = new ProjectDAO();
         projectDAO.getManager().connect();
 
@@ -21,7 +20,7 @@ public class ProjectTest {
     }
 
     @Test
-    public void testCRUD() throws Exception {
+    void testCRUD() throws Exception {
         final ProjectDAO projectDAO = new ProjectDAO();
         projectDAO.getManager().connect();
 
